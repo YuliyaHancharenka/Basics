@@ -1,0 +1,58 @@
+[
+  {
+    "tourName": "Cruise",
+    "numberOfDays": 5,
+    "food": "ALL_INCLUSIVE",
+    "transport": "SHIP",
+    "isBusinessClass": true
+  },
+  {
+    "tourName": "Cruise",
+    "numberOfDays": 10,
+    "food": "ONLY_BED",
+    "transport": "SHIP",
+    "isBusinessClass": false
+  },
+  {
+    "tourName": "Seaside",
+    "numberOfDays": 7,
+    "food": "BEDAND_BREAKFAST",
+    "transport": "BUS",
+    "isDivingIncluded": false
+  },
+  {
+    "tourName": "Seaside",
+    "numberOfDays": 14,
+    "food": "ALL_INCLUSIVE",
+    "transport": "PLANE",
+    "isDivingIncluded": true
+  },
+  {
+    "tourName": "Shopping",
+    "numberOfDays": 3,
+    "food": "BEDAND_BREAKFAST",
+    "transport": "BUS",
+    "taxFreeReturnIncluded": true
+  },
+  {
+    "tourName": "Shopping",
+    "numberOfDays": 2,
+    "food": "ONLY_BED",
+    "transport": "TRAIN",
+    "taxFreeReturnIncluded": false
+  },
+  {
+    "tourName": "Therapy",
+    "numberOfDays": 20,
+    "food": "ALL_INCLUSIVE",
+    "transport": "PLANE",
+    "massageIncluded": true
+  },
+  {
+    "tourName": "Therapy",
+    "numberOfDays": 30,
+    "food": "BEDAND_BREAKFAST",
+    "transport": "BUS",
+    "massageIncluded": false
+  }
+]
