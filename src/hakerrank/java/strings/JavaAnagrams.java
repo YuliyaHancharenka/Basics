@@ -10,8 +10,8 @@ public class JavaAnagrams {
     static boolean isAnagram(String a, String b) {
         // 1st approach
 
-        char[] aArray = a.toLowerCase().toCharArray();
-        char[] bArray = b.toLowerCase().toCharArray();
+        //char[] aArray = a.toLowerCase().toCharArray();
+        //char[] bArray = b.toLowerCase().toCharArray();
  /*       if (aArray.length == bArray.length) {
             Arrays.sort(aArray);
             Arrays.sort(bArray);
@@ -24,14 +24,27 @@ public class JavaAnagrams {
         }*/
 
         // 2nd approach
-        if (aArray.length == bArray.length) {
-            Map myMap = new HashMap();
-            for (int i = 0; i < aArray.length; i++){
-                if (myMap.containsKey(i) == true){
-
+        a = a.toLowerCase(); b = b.toLowerCase();
+        if (a.length() == b.length()) {
+            Map<Character, Integer> myMap = new HashMap<>();
+            for (int i = 0; i < a.length(); i++) {
+                char c = a.charAt(i);
+                if (!myMap.containsKey(c)) {
+                    myMap.put(c, 1);
+                } else {
+                    int count = myMap.get(c);
+                    myMap.put(c, ++count);
                 }
             }
 
+            for (int i = 0; i < b.length(); i++) {
+                char c = b.charAt(i);
+                if (myMap.containsKey(c)) {
+                    int count = myMap.get(c);
+                    myMap.put(c, --count);
+                }
+            }
+            return myMap.values().stream().filter(v->v>0).count() == 0;
         }
         return false;
     }
