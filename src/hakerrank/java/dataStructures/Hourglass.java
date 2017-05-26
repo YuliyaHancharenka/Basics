@@ -1,4 +1,4 @@
-package hakerrank;
+package hakerrank.java.dataStructures;
 /*Given a  2D Array, :
 
         1 1 1 0 0 0
