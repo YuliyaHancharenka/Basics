@@ -10,7 +10,6 @@ public class JavaPrimalityTest {
 
         Scanner in = new Scanner(System.in);
         BigInteger n = in.nextBigInteger();
-
         System.out.println(n.isProbablePrime(100) ? "prime" : "not prime");
         in.close();
 
