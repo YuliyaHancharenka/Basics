@@ -23,6 +23,7 @@ public class JavaSubarray {
     }
 
     private static boolean isSumNegative(int[] a, int begin, int end) {
+        // return IntStream.rangeClosed(begin, end).map(i -> a[i]).sum() < 0;           // instead of method description below
         int sum = 0;
         for (int i = begin; i <= end; i++) {
             sum = sum + a[i];
