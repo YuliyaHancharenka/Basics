@@ -1,20 +1,17 @@
-package hakerrank;
+package hakerrank.java.dataStructures;
 
 
 import java.util.Scanner;
 import java.util.Stack;
 
-public class BalancedBrackets {
+public class JavaStack {
+    public static void main(String[] argh) {
+        Scanner sc = new Scanner(System.in);
 
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int t = in.nextInt();
-        for (int i = 0; i < t; i++) {
-            String s = in.next();
-            System.out.println(isMatched(s) ? "YES" : "NO");
+        while (sc.hasNext()) {
+            String s = sc.next();
+            System.out.println(isMatched(s) ? "true" : "false");
         }
-
-        in.close();
     }
 
     static boolean isMatched(String s) {
