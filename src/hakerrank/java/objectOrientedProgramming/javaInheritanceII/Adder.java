@@ -1,6 +1,6 @@
 package hakerrank.java.objectOrientedProgramming.javaInheritanceII;
 
 
-public class Adder {
+class Adder extends Arithmetic{
 
 }
