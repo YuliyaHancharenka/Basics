@@ -1,7 +1,16 @@
 package hakerrank.java.advanced.primeChecker;
 
 
+import java.math.BigInteger;
+
 public class Prime {
-    public void checkPrime(int n1) {
+
+    void checkPrime(int... numbers) {
+        for (int number : numbers) {
+            if (BigInteger.valueOf(number).isProbablePrime(1)) {
+                System.out.print(number + " ");
+            }
+        }
+        System.out.println();
     }
 }
