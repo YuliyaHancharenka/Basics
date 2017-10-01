@@ -2,7 +2,7 @@ package hakerrank.java.advanced.javaVisitorPattern;
 
 public class Main {
 
-    public static Tree solve() {
+   /* public static Tree solve() {
         //read the tree from STDIN and return its root as a return value of this function
     }
 
@@ -23,5 +23,5 @@ public class Main {
         System.out.println(res1);
         System.out.println(res2);
         System.out.println(res3);
-    }
+    }*/
 }
