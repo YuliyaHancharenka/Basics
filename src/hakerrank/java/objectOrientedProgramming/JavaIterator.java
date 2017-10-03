@@ -40,8 +40,6 @@ public class JavaIterator {
             System.out.println((String) element);
         }
 
-
-
         // Example
 /*
         ArrayList<String> mylist1 = new ArrayList();
@@ -52,7 +50,7 @@ public class JavaIterator {
         mylist1.add("5");
         Iterator iterator = mylist1.iterator();
 
-//possible for iterator removing
+//possible for iterator removing operation
         while (iterator.hasNext()) {
             Object element = iterator.next();
             System.out.println((String) element);
@@ -62,8 +60,8 @@ public class JavaIterator {
         }
         mylist1.add("6");
 
-//impossible for foreach cycle when removing
-        /*for(String s : mylist1) {
+//impossible for foreach/for cycle when removing
+        for(String s : mylist1) {
             if(s.equals("3")){
                 mylist1.remove(s);
             }
