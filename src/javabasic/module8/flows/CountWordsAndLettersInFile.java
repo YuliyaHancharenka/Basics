@@ -2,24 +2,24 @@ package javabasic.module8.flows;
 /*
 в файле текст
 посчитать количество слов, количество букв, количество гласных
-в этом тексте и вывести
+Нужно выводить не в консоль а в файл другой output.yuliya
 файл input.yuliya с тектом должен быть на диске где-то
 */
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 public class CountWordsAndLettersInFile {
 
     public static void main(String[] args) {
         File in;
+        File out;
         FileReader reader;
+        FileWriter fileWriter = null;
         BufferedReader bufferedReader = null;
 
         try {
-            in = new File("d:/input2.yuliya");
+            in = new File("d:/input.yuliya");
+            out = new File("d:/output.yuliya");
             reader = new FileReader(in);
             bufferedReader = new BufferedReader(reader);
 
@@ -46,14 +46,17 @@ public class CountWordsAndLettersInFile {
                     }
                 }
             }
-            System.out.println("Words' quantity - " + countWords);
-            System.out.println("Letters' quantity - " + countLetters);
-            System.out.println("Vowels' quantity - " + countVowels);
+            fileWriter = new FileWriter(out);
+            fileWriter.append("Words' quantity - ").append(Integer.toString(countWords));
+            fileWriter.append("\nLetters' quantity - ").append(Integer.toString(countLetters));
+            fileWriter.append("\nVowels' quantity - ").append(Integer.toString(countVowels));
+            fileWriter.flush();
 
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         } finally {
             try {
+                fileWriter.close();
                 bufferedReader.close();
             } catch (IOException e) {
                 e.printStackTrace();
