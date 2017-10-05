@@ -1,11 +1,7 @@
 package hakerrank.java.strings;
 
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
-
+import java.util.Scanner;
+//TODO
 public class TagContentExtractor {
     public static void main(String[] args){
 

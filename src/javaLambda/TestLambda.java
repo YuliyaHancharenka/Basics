@@ -1,6 +1,7 @@
 package javaLambda;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -22,7 +23,7 @@ public class TestLambda {
 
         System.out.println(list.stream().count());
 
-        //TODO comparator?
+        System.out.println(list.stream().max(Comparator.reverseOrder()).get());
 
         List<String> G7 = Arrays.asList("USA", "Japan", "France", "Germany", "Italy", "U.K.","Canada");
         String G7Countries = G7.stream().map(x -> x.toUpperCase()).collect(Collectors.joining(", "));
