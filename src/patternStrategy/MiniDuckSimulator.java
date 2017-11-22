@@ -1,4 +1,4 @@
-package duck;
+package patternStrategy;
 
 
 public class MiniDuckSimulator {
