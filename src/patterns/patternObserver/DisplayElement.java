@@ -1,4 +1,4 @@
-package patternObserver;
+package patterns.patternObserver;
 
 public interface DisplayElement {
 

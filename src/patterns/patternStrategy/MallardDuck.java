@@ -1,4 +1,4 @@
-package patternStrategy;
+package patterns.patternStrategy;
 
 
 public class MallardDuck extends Duck {
@@ -10,6 +10,6 @@ public class MallardDuck extends Duck {
 
     @Override
     public void display() {
-        System.out.println("I'm a real mallard patternStrategy");
+        System.out.println("I'm a real mallard patterns.patternStrategy");
     }
 }

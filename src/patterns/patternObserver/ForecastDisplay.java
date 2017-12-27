@@ -1,4 +1,4 @@
-package patternObserver;
+package patterns.patternObserver;
 
 
 import java.util.Observable;
