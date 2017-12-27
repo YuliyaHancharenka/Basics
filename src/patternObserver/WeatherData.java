@@ -8,18 +8,6 @@ public class WeatherData extends Observable {
     private float humidity;
     private float pressure;
 
-    public float getTemperature() {
-        return temperature;
-    }
-
-    public float getHumidity() {
-        return humidity;
-    }
-
-    public float getPressure() {
-        return pressure;
-    }
-
     public WeatherData() {
     }
 
@@ -35,4 +23,15 @@ public class WeatherData extends Observable {
         measurementsChanged();
     }
 
+    public float getTemperature() {
+        return temperature;
+    }
+
+    public float getHumidity() {
+        return humidity;
+    }
+
+    public float getPressure() {
+        return pressure;
+    }
 }

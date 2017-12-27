@@ -1,12 +1,13 @@
 package patternObserver;
 
 import java.util.Observable;
+import java.util.Observer;
 
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
 
+    Observable observable;
     private float temperature;
     private float humidity;
-    Observable observable;
 
     public CurrentConditionsDisplay(Observable observable) {
         this.observable = observable;
