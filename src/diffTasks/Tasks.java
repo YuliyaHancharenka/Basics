@@ -1,8 +1,5 @@
 package diffTasks;
 
-import java.util.Arrays;
-import java.util.Scanner;
-
 /**
  * Created by Yuliya_Hancharenka on 2/10/2017.
  */
@@ -36,27 +33,6 @@ public class Tasks {
                     sum += Character.getNumericValue(n);
                 }
                 System.out.println(sum);*/
-
-
-               // 6. Определить, простое ли число, введенное пользователем
-                int b; int r; boolean isSimple = true;
-                //Создадим объект класса Scanner
-                Scanner scn = new Scanner(System.in);
-                System.out.println("Введите любое число");
-                b = scn.nextInt();
-
-                for (int i = 2;  i < b; i++) {
-                    r = b % i;
-                    if (r == 0) {
-                        isSimple = false;
-                        break;
-                    }
-                }
-                if(isSimple) {
-                    System.out.println(b + " - простое число");
-                } else {
-                    System.out.println(b + " - составное число");
-                }
           }
     }
 
