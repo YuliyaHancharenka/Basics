@@ -11,15 +11,15 @@ public class ArraysEx1_HashMap {
 
         //1. Есть массив, нужно циклически сдвинуть элементы массива вправо на одну позицию.
         // Цикличность означает, что последний элемент массива становится самым первым его элементом. Ну и для проверки выводишь массив результат
-
-        int[] a = new int[]{1, 3, 4, 5, 6, 7, 888, 654, 345, -1};
-        int[] b = new int[a.length];
-        b[0] = a[a.length - 1];
-        System.arraycopy(a, 0, b, 1, a.length - 1);
-
-        for (int i = 0; i < b.length; i++) {
-            System.out.println(b[i]);
-        }
+//
+//        int[] a = new int[]{1, 3, 4, 5, 6, 7, 888, 654, 345, -1};
+//        int[] b = new int[a.length];
+//        b[0] = a[a.length - 1];
+//        System.arraycopy(a, 0, b, 1, a.length - 1);
+//
+//        for (int i = 0; i < b.length; i++) {
+//            System.out.println(b[i]);
+//        }
 
         //2. Как посчитать количество каждого слова в тексте, олдскульная задача такая. HashMap - Подсказка
         String s = "So, to in order to keep consistency and not depend on character so positioning, you might want to escape " +
